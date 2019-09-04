@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tencent.shadow.sample.plugin">
+    package="com.timecat.plugin">
 
     <application
         android:name="com.timecat.component.commonarms.core.BaseApplication"
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".DataDetailActivity"/>
+        <activity android:name="com.timecat.plugin.data.DataDetailActivity"/>
 
-        <activity android:name=".DataManagerActivity">
+        <activity android:name="com.timecat.plugin.data.DataManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

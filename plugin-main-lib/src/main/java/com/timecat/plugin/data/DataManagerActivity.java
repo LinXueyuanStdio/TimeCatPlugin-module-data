@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.plugin;
+package com.timecat.plugin.data;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.tencent.shadow.sample.plugin.R;
 import com.timecat.component.data.RouterHub;
 
 /**
