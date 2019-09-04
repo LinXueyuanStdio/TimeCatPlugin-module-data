@@ -40,6 +40,9 @@ shadow {
                         buildTask = 'assembleDebug'
                         apkName = 'plugin-shadow-apk-debug.apk'
                         apkPath = 'plugin-shadow-apk/build/outputs/apk/debug/plugin-shadow-apk-debug.apk'
+                        hostWhiteList = ["com.timecat.component.data.database",
+                                         "com.timecat.component.data.database.dao",
+                                         "com.timecat.component.data.*"]
                     }
                 }
             }
@@ -54,6 +57,9 @@ shadow {
                         buildTask = 'assembleRelease'
                         apkName = 'plugin-shadow-apk-release.apk'
                         apkPath = 'plugin-shadow-apk/build/outputs/apk/release/plugin-shadow-apk-release.apk'
+                        hostWhiteList = ["com.timecat.component.data.database",
+                                         "com.timecat.component.data.database.dao",
+                                         "com.timecat.component.data.*"]
                     }
                 }
             }
