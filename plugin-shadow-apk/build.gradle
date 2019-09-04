@@ -35,7 +35,7 @@ shadow {
                 runtimeApkConfig = new Tuple2('sample-runtime-debug.apk', ':sample-runtime:assembleDebug')
                 pluginApks {
                     pluginApk1 {
-                        businessName = 'sample-plugin'//businessName相同的插件，context获取的Dir是相同的。businessName留空，表示和宿主相同业务，直接使用宿主的Dir。
+                        businessName = ''//businessName相同的插件，context获取的Dir是相同的。businessName留空，表示和宿主相同业务，直接使用宿主的Dir。
                         partKey = 'sample-plugin'
                         buildTask = 'assembleDebug'
                         apkName = 'plugin-shadow-apk-debug.apk'
@@ -49,7 +49,7 @@ shadow {
                 runtimeApkConfig = new Tuple2('sample-runtime-release.apk', ':sample-runtime:assembleRelease')
                 pluginApks {
                     pluginApk1 {
-                        businessName = 'demo'
+                        businessName = ''
                         partKey = 'sample-plugin'
                         buildTask = 'assembleRelease'
                         apkName = 'plugin-shadow-apk-release.apk'

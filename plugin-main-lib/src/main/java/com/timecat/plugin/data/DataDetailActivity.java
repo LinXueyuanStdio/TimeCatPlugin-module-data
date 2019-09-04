@@ -8,9 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bin.david.form.core.SmartTable;
-import com.tencent.shadow.sample.plugin.R;
 import com.timecat.component.data.RouterHub;
 import com.timecat.component.data.database.DB;
+import com.timecat.plugin.R;
 
 /**
  * @author dlink

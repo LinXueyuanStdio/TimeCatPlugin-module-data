@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.tencent.shadow.sample.plugin.R;
 import com.timecat.component.data.RouterHub;
+import com.timecat.plugin.R;
 
 /**
  * @author dlink
