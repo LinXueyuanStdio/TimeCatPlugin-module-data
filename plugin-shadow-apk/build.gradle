@@ -69,8 +69,8 @@ shadow {
 
         runtimeApkProjectPath = 'sample-runtime'
 
-        version = 4
-        compactVersion = [1, 2, 3]
-        uuidNickName = "1.1.5"
+        version = 5
+        compactVersion = [1, 2, 3, 4]
+        uuidNickName = "1.1.6"
     }
 }
