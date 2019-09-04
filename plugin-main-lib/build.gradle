@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.alibaba.arouter'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+apply from: "../../../config_base.gradle"
+
+android {
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+                includeCompileClasspath true
+            }
+        }
+    }
+}
+
+repositories {
+    maven { url "https://raw.githubusercontent.com/LinXueyuanStdio/TimeCatMaven/master" }
+}
+
+dependencies {
+    api 'com.timecat.component:SelfRouter:1.0.5'
+    compileOnly 'com.timecat.component:CommonData:1.0.0'
+    
+    api 'com.github.huangyanbin:SmartTable:2.2.0'
+
+    compileOnly 'androidx.appcompat:appcompat:1.0.2'
+    kapt rootProject.ext.dependencies["arouter-compiler"]
+}
