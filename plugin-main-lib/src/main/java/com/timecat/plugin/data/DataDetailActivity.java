@@ -1,16 +1,20 @@
 package com.timecat.plugin.data;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.bin.david.form.core.SmartTable;
 import com.timecat.component.data.RouterHub;
 import com.timecat.component.data.database.DB;
-import com.timecat.plugin.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author dlink
@@ -23,11 +27,11 @@ import com.timecat.plugin.R;
 public class DataDetailActivity extends AppCompatActivity {
 
     @Autowired
-    String title = "";
+    String title = "任务";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        //    ARouter.getInstance().inject(this);
+        ARouter.getInstance().inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.data_activity_datadetail);
 
@@ -37,19 +41,24 @@ public class DataDetailActivity extends AppCompatActivity {
 
         SmartTable table = findViewById(R.id.table);
         table.setZoom(true);
+        List a = new ArrayList();
         if ("任务".equals(title)) {
-            table.setData(DB.schedules().findAllForActiveUser());
+            a = DB.schedules().findAll();
         } else if ("笔记".equals(title)) {
-            table.setData(DB.notes().findAllForActiveUser());
+            a = DB.notes().findAll();
         } else if ("笔记本".equals(title)) {
-            table.setData(DB.notebooks().findAllForActiveUser());
+            a = DB.notebooks().findAll();
         } else if ("计划".equals(title)) {
-            table.setData(DB.plans().findAllForActiveUser());
+            a = DB.plans().findAll();
         } else if ("子计划".equals(title)) {
-            table.setData(DB.subPlans().findAllForActiveUser());
+            a = DB.subPlans().findAll();
         } else if ("习惯".equals(title)) {
-            table.setData(DB.habits().findAllForActiveUser());
+            a = DB.habits().findAll();
         }
+        if (a == null) a = new ArrayList();
+        Log.e("plugin-module-data", "size: " + a.size());
+        Log.e("plugin-module-data", "data: " + a);
+        table.setData(a);
     }
 
 }
