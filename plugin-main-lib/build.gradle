@@ -21,11 +21,11 @@ repositories {
 }
 
 dependencies {
-    api 'com.timecat.component:SelfRouter:1.0.5'
-    compileOnly 'com.timecat.component:CommonData:1.0.0'
-    
     api 'com.github.huangyanbin:SmartTable:2.2.0'
 
-    compileOnly 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.appcompat:appcompat:1.0.0'
+
+    api 'com.timecat.component:CommonData:1.0.0'
+    api 'com.timecat.component:SelfRouter:1.0.5'
     kapt rootProject.ext.dependencies["arouter-compiler"]
 }
