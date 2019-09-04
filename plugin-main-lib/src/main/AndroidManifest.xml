@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.timecat.plugin">
+    package="com.timecat.plugin.data">
 
     <application
         android:name="com.timecat.component.commonarms.core.BaseApplication"
