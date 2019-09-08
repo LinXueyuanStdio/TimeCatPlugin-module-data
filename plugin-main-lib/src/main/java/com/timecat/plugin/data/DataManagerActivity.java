@@ -16,7 +16,7 @@ import com.timecat.component.data.RouterHub;
  * @author dlink
  * @email linxy59@mail2.sysu.edu.cn
  * @date 2018/6/16
- * @discription 权限+喵密钥
+ * @description 权限+喵密钥
  * @usage null
  */
 @Route(path = RouterHub.Data_DataManagerActivity)
