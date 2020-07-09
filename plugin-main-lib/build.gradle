@@ -22,7 +22,7 @@ repositories {
 dependencies {
     api 'com.github.huangyanbin:SmartTable:2.2.0'
 
-    api 'androidx.appcompat:appcompat:1.0.0'
+    api rootProject.ext.androidx_lib["appcompat"]
 
     //注意sample-host-lib要用compileOnly编译而不打包在插件中。在packagePlugin任务中配置hostWhiteList允许插件访问宿主的类。
     compileOnly 'com.j256.ormlite:ormlite-android:4.45'
