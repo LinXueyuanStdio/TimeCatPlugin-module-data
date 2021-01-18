@@ -3,7 +3,7 @@
     package="com.timecat.plugin.data">
 
     <application
-        android:name="com.timecat.component.commonarms.core.BaseApplication"
+        android:name="com.timecat.extend.arms.BaseApplication"
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">

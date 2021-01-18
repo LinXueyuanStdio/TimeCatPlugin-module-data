@@ -10,8 +10,8 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.bin.david.form.core.SmartTable;
-import com.timecat.component.readonly.RouterHub;
-import com.timecat.component.data.database.DB;
+import com.timecat.identity.readonly.RouterHub;
+import com.timecat.data.system.database.DB;
 
 import java.util.ArrayList;
 import java.util.List;
